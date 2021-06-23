@@ -32,25 +32,25 @@ body {
     border: 1px solid transparent;
     background-color: rgb(51, 94, 234);
     color: #fff;
-    font-size: 17 px;
+    font-size: 17px;
     font-weight: 500;
-    line-height: 20 px;
+    line-height: 20px;
     margin-right: 4px;
-    border-radius: 6 px;
+    border-radius: 6px;
     text-align: center;
     cursor: pointer;
     transition-duration: 0.25s;
 }
 
 .buttons-container button:hover {
-    box-shadow: 0.1rem 2.5rem rbga(22, 28, 45, 0.1),
-        0 0.5rem 1 rem -0.75rem rgba(22, 28, 45, 0.1);
+    box-shadow: 0.1rem 2.5rem rgba(22, 28, 45, 0.1),
+        0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.1);
     transform: translate3d(0, -3px, 0);
 }
 
-.buttons-container button;last-of-type {
+.buttons-container button:last-of-type {
     color: #335eea;
-    background-color: rbga(51, 94, 234, 0.1);
+    background-color: rgba(51, 94, 234, 0.1);
 }
 
 header 1 {
@@ -94,13 +94,12 @@ header button {
     font-size: 19px;
     font-weight: 400;
     line-height: 30px;
-    z-index: 2
-    color: rgba(255, 255, 255, 0.75)
+    z-index: 2;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .top-splash-container .content {
     margin: auto;
-
 }
 
 .top_splash_container .mask {
@@ -109,8 +108,8 @@ header button {
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 1
-    backgroud-color: rgba(0, 0, 0, 0.7)
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .search-container {
@@ -127,25 +126,23 @@ header button {
     width: 100%;
     padding: 10px 4 px;
     border: none;
-    box-shadow: 0 0.5rem 1.5rem rbga(22, 28, 45, 0.1)
-    
+    box-shadow: 0 0.5rem 1.5rem rbga(22, 28, 45, 0.1);
 }
 
 .search-container i {
-    color: rgb(134, 154, 184)
+    color: rgb(134, 154, 184);
     font-size: 17px;
 }
 
 .search-container .input-prepend-container {
     padding: 0px 4px 0px 24px;
-    backgroud-color: #fff
+    background-color: #fff;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
-    box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1)
+    box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
     display: flex;
     justify-items: center;
     align-items: center;
-
 }
 
 .search-container .button-container {
@@ -160,8 +157,8 @@ header button {
 .search-container button {
     padding: 9px 16px;
     font-size: 17px;
-    colors: #fff
-    background-color: rgb(51, 94, 234)
+    colors: #fff;
+    background-color: rgb(51, 94, 234);
     border: none;
     border-radius: 6px;
     font-weight: 600;
