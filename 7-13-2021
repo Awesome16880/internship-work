@@ -1,0 +1,108 @@
+function ucFirst(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+console.log (ucFirst ("john"));
+
+function checkSpam(str) {
+    const strL = str.toLowerCase();
+    const s = strL.split(" ").includes("sex", "viagra", "porn", "free");
+    if (s == true) {
+        return true;
+    }
+    if (s == false) {
+        return false;
+    }
+}
+console.log(checkSpam('buy ViAgRA now'));
+console.log(checSpam('free porn'));
+console.log(checSpam('freebie'));
+console.log(checSpam('free sex'));
+console.log(checSpam('innocent rabbit'));
+
+function truncate(str, max_length) {
+    const checkLength = str.length();
+    if (checkLength > max_length) {
+        const shortened = str.slice(0, max_length);
+        const finished = shortened + "...";
+        return finished;
+    }
+    else {
+        return str;
+    }
+}
+console.log(truncate("What I'd like to tell on this topic is:", 20));
+console.log(truncate("Hi everyone!", 20));
+
+function extractCurrencyValue(str) {
+    const finished = str.replaceAll("[^0-9]", "");
+    return finished;
+}
+console.log(extractCurrencyValue("$120"));
+
+const fruits = ["Apples", "Pear", "Orange"];
+const shoppingCart = fruits;
+shoppingCart.push("banana");
+console.log("The length of fruits will be 3. The length of shoppingCart will be 4.");
+
+const styles = ["Jazz", "Blues"];
+console.log(styles());
+styles.push("Rock-n-Roll");
+console.log(styles());
+styles.splice(1, 1);
+styles.splice(1, 0, 'Classics');
+console.log(styles());
+styles.shift();
+console.log(styles());
+styles.unshift('Rap', 'Reggae');
+console.log(styles());
+
+function camelize(str) {
+    const split = str.split(" ");
+    const a = str[0];
+    const transform1 = split.shift(a);
+    const transform2 = split.charAt(0).toUpperCase() + str.slice(1);
+    const transform3 = split.unshift(a);
+    const transform4 = split.join();
+    return transform4;
+}
+console.log(camelize("background-color"));
+console.log(camelize("list-style-image"));
+console.log(camelize("font-size"));
+
+function filterRange(arr, a, b) {
+    const newList = [];
+    for (let i = 0; i < arr.length; i++) {
+        if ((arr[i] <= a) && (arr[i] >= b)) {
+            newList.push(arr[i]);
+        }
+    }
+    return newList;
+}
+let arr = [5, 3, 8, 1];
+let filtered = filterRange(arr, 1, 4);
+console.log(filtered);
+console.log(arr);
+
+function filterRangeInPlace(arr, a, b) {
+    for (let i = 0; i < arr.length; i++) {
+        if ((arr[i] <= a) && (arr[i] >= b)) {
+            arr.splice(i, 1);
+        }
+    }
+}
+let arr = [5, 3, 8, 1];
+filterRangeInPlace(arr, 1, 4);
+console.log(arr);
+
+function mapToNames(arr) {
+    const names = users.map(user => user.name);
+    const newList = [];
+    newList.push(names);
+    return newList;
+}
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+let users = [ john, pete, mary ];
+let names = mapToNames(users);
+console.log(names);
